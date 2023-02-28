@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Espresso",
+    "price": 2.49,
+    "type": "coffee",
+    "id": "d4b77bb6-a601-466f-b6ae-fde0c61b56f0"
+  },
+  {
+    "name": "Espresso",
+    "price": 2.49,
+    "type": "coffee",
+    "id": "6805cb7f-ee14-4a1c-999c-c836f59f5c6d"
+  },
+  {
+    "name": "Espresso",
+    "price": 2.49,
+    "type": "coffee",
+    "id": "a041274a-e122-44b2-ab33-1e8c6c388226"
+  },
+  {
+    "name": "Espresso",
+    "price": 2.49,
+    "type": "coffee",
+    "id": "5a5d82c4-6cd0-4f75-ac9e-206c5be537ad"
+  }
+]
