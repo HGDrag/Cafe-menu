@@ -28,5 +28,12 @@
     "type": "alchocol",
     "price": 3.49,
     "id": "b06b1471-1ac7-4ae1-beed-8f36f9679cea"
+  },
+  {
+    "name": "Jim Beam",
+    "price": 2.5,
+    "type": "alchocol",
+    "image": "logo192.png",
+    "id": "315d309b-0ad6-44a2-bc0a-b335dd078934"
   }
 ]

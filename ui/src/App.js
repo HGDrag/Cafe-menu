@@ -20,7 +20,7 @@ import './App.css';
         }
       </ul> */}
       {
-        data.map((product, i) => <ProductCard key = {i} name={product.name} price={product.price} type = {product.type}/>)
+        data.map((product, i) => <ProductCard key = {i} name={product.name} price={product.price} type = {product.type} img = {product.image}/>)
       }
 
 

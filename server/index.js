@@ -9,6 +9,8 @@ const app = express();
 const PORT = 5000;
 
 app.use(bodyParser.json());
+app.use(express.static('public'));
+
 
 // Set the path and run products routes
 app.use('/products', productsRoutes);
