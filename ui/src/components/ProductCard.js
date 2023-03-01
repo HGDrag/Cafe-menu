@@ -6,9 +6,11 @@ export const ProductCard = (props) => {
 
     <div className='productCard'>
         <img src = {props.img}alt='image of the product'></img>
-        <h3>{props.name}</h3>
-        <p>{props.price}</p>
-        <p>{props.type}</p>
+        <div className='product_info'>
+          <p>-{props.type}-</p>
+          <h3>{props.name}</h3>
+          <p>{props.price}$</p>
+        </div>
     </div>
   )
 
