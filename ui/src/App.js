@@ -1,7 +1,8 @@
 import react from 'react';
 import { useEffect, useState } from 'react';
-
-const App = () => {
+import { ProductCard } from './components/ProductCard';
+import './App.css';
+ const App = () => {
 
     const [data, setData] = useState([{}]);
 
@@ -13,13 +14,17 @@ const App = () => {
     
   return (
     <div>
-      <ul>
-
+     { /* <ul>
         {
           data.map((product, i) => <li key={i}>{product.name}, {product.price}, {product.type}</li>)
-          
         }
-      </ul>
+      </ul> */}
+      {
+        data.map((product, i) => <ProductCard key = {i} name={product.name} price={product.price} type = {product.type}/>)
+      }
+
+
+      
     </div>
   )
 

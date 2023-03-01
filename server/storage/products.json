@@ -22,5 +22,11 @@
     "price": 2.49,
     "type": "coffee",
     "id": "5a5d82c4-6cd0-4f75-ac9e-206c5be537ad"
+  },
+  {
+    "name": "Beer",
+    "type": "alchocol",
+    "price": 3.49,
+    "id": "b06b1471-1ac7-4ae1-beed-8f36f9679cea"
   }
 ]
