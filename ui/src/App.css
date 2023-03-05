@@ -1,107 +1,124 @@
+:root{
+  --main-color: blueviolet;
+  --transparent-main: rgba(137, 43, 226, 0.1);
+  --secondary-color: darkmagenta;
+  --darker-secondary: rgb(58, 1, 58);
+  --white: #FBFAF5;
+  --black: #0e1111;
+  --gray: #3333331c;
+  --text-shadow: 0rem 0rem 0.5rem var(--secondary-color);
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+body{
+  background-color: var(--black);
+}
+
 .main{
-  min-width: 100%;
-  padding: 2rem;
-  background-color: rgb(255, 244, 230);
+  width: 100%;
+  padding: 1rem;
   display: grid;
   gap: 1.75rem;
   grid-column: 1;
+  align-content: center;
 }
+
 
 .productCard{
-
-  /* border: 1px solid red; */
   margin: auto;
-  display: flex; 
-  max-width: 20rem;
-  max-height: 20rem;
-  background-color: aliceblue;
-  box-shadow: -1.5px 0px 15px 1px rgba(95, 151, 153, 0.3);
-  /* border: 1px solid cadetblue; */
-  border-radius: 0.3rem;
+  max-width: 25rem;
+  max-height: 12rem;
+  display: flex;
+  border-radius: 3rem;
+  text-align: center;
+  border-right:1px solid var(--main-color) ;
+  border-left:1px solid var(--main-color) ;
+  box-shadow: 0px 0px 5px -1px var(--secondary-color);
 }
 .product_info{
-  width: 15rem; 
-  color: cadetblue;
-  background-color: bisque;
+  width: 10rem;
+  border-radius: 3rem;
+  color: var(--white);
+  padding: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
-  gap: 1rem;
-  font-size: 1.1rem;
-  text-align: center;
-  letter-spacing: 1.5px;
-  text-transform: capitalize;
-  font-family: 'Courier New', Courier, monospace;
-  border-top: 0.2rem solid cadetblue;
-  border-bottom: 0.2rem solid cadetblue;
-  
-  box-shadow: inset 0px 0px 20px 2px rgba(255, 127, 80, 0.445);
+  border: 0px 0px 1px 0px solid var(--main-color);
+  text-shadow: var(--text-shadow);
 }
 .product_info h3{
   font-style: italic;
+  font-size: 1.75rem;
 }
-.product_info p:nth-child(3){
-  letter-spacing: normal;
-  font-weight: bold;
-  letter-spacing: normal;
+.product_info p {
+  text-transform: capitalize;
+}
+.product_info h1{
+  font-size: 3.5rem;
 }
 
 .productCard img {
-  width: 100%;
+  width: inherit;
   display: block;
+  border-top-left-radius: 3rem;
+  border-bottom-left-radius: 3rem;
 }
 
 
 .nav{
-  font-family: fantasy;
-  font-size: 1.75rem;
-  text-transform: capitalize;
-  height: 5rem;
+  font-family: 'Poppins', sans-serif;
+  color: var(--main-color);
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(15, 15, 15);
+  height: 5rem;
+  text-shadow: 0rem 0rem 0.5rem var(--secondary-color);
+  background-color: var(--black);
 }
-.nav .nav_hamburger{
-  padding: 0.5rem;
+
+.nav h2{
+  font-size: 2rem;
+  font-family: cursive;
+  color: var(--white);
+}
+
+.nav_hamburger{
   cursor: pointer;
-  border-radius: 1rem;
-}
-.nav h2 {
-  color: white;
-  letter-spacing: 0.2rem;
-  filter: drop-shadow(0px 0px px darkmagenta);
-}
-.nav .nav_hamburger div{
-  background: linear-gradient(to left, darkmagenta, blueviolet);
-  box-shadow: inset 0px 0px 5px 1px rgba(255, 255, 255, 0.214);
   width: 2.5rem;
-  height: 0.45rem;
-  margin: 0.3rem 0rem;
-  border-radius: 0.2rem;
+  height: 2.5rem;
 }
 
-.nav .nav_hamburger div:first-child{
+.nav_hamburger div{
+  margin: 0.33rem 0;
+  height: 0.35rem;
+  border-radius: 0.25rem;
+  background-color: var(--secondary-color);
+  filter: drop-shadow(0rem 0rem 0.1rem var(--main-color));
+}
+
+.nav_hamburger div:first-child{
   width: 2rem;
-}
-.nav .nav_hamburger div:nth-child(2){
-  width: 1.5rem;
-}
-.nav .nav_hamburger div:last-child{
-  width: 1rem;
+  transition: width .15s ease-out;
 }
 
-.nav .nav_hamburger:hover div:first-child{
-  width: 2.5rem;
-  transition: width  .1s ease-in-out ;
+.nav_hamburger div:nth-child(2){
+  width: 1.654rem;
+  transition: width .22s ease-out;
 }
-.nav .nav_hamburger:hover div:nth-child(2){
+
+.nav_hamburger div:last-child{
+  width: 1.225rem;
+  transition: width .17s ease-out;
+}
+
+.nav_hamburger:hover div{
   width: 2.5rem;
-  transition: width  .1s ease-in-out ;
+  background: linear-gradient(to right, var(--secondary-color) 20%, var(--white) 150%);
+
 }
