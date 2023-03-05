@@ -56,3 +56,52 @@
   width: 100%;
   display: block;
 }
+
+
+.nav{
+  font-family: fantasy;
+  font-size: 1.75rem;
+  text-transform: capitalize;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(15, 15, 15);
+}
+.nav .nav_hamburger{
+  padding: 0.5rem;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+.nav h2 {
+  color: white;
+  letter-spacing: 0.2rem;
+  filter: drop-shadow(0px 0px px darkmagenta);
+}
+.nav .nav_hamburger div{
+  background: linear-gradient(to left, darkmagenta, blueviolet);
+  box-shadow: inset 0px 0px 5px 1px rgba(255, 255, 255, 0.214);
+  width: 2.5rem;
+  height: 0.45rem;
+  margin: 0.3rem 0rem;
+  border-radius: 0.2rem;
+}
+
+.nav .nav_hamburger div:first-child{
+  width: 2rem;
+}
+.nav .nav_hamburger div:nth-child(2){
+  width: 1.5rem;
+}
+.nav .nav_hamburger div:last-child{
+  width: 1rem;
+}
+
+.nav .nav_hamburger:hover div:first-child{
+  width: 2.5rem;
+  transition: width  .1s ease-in-out ;
+}
+.nav .nav_hamburger:hover div:nth-child(2){
+  width: 2.5rem;
+  transition: width  .1s ease-in-out ;
+}
