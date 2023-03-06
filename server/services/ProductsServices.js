@@ -27,7 +27,7 @@ export const appendToStorage = (path, newData, callback) => {
     callback(newData);
 }
 
-export const getProduct = (path, id, callback) => {
+export const getStorageObject = (path, id, callback) => {
 
     readStorage(path, data => {
         const storageData = JSON.parse(data);
@@ -39,7 +39,7 @@ export const getProduct = (path, id, callback) => {
 }
 
 
-export const delProduct = (path, id, callback) =>{
+export const delStorageObject = (path, id, callback) =>{
     readStorage(path, data => {
         let storageData = JSON.parse(data);
 
@@ -54,7 +54,7 @@ export const delProduct = (path, id, callback) =>{
     });
 }
 
-export const patchProduct = (path, id, [name, type, price], callback) => {
+export const patchStorageObject = (path, id, [name, type, price], callback) => {
     readStorage(path, data =>{
         let storageData = JSON.parse(data);
 
