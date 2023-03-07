@@ -9,10 +9,9 @@ const Main = () => {
         .then(data => setData(data));
     }, []);
     
-
   return (
     <div className='main'>
-        {
+      {
         data.map((product, i) => <ProductCard key = {i} name={product.name} price={product.price} type = {product.type} img = {product.image}/>)
       }
     </div>

@@ -1,4 +1,4 @@
-import { readStorage, appendToStorage, getStorageObject, delStorageObject, patchStorageObject} from '../services/ProductsServices.js';
+import { readStorage, appendToStorage, getStorageObject, delStorageObject, patchStorageObject} from '../services/StorageServices.js';
 
 const PATH  = './storage/products.json'
 
